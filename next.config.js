@@ -1,5 +1,4 @@
 module.exports = {
-  basePath: '/blog',
   i18n: {
     locales: ['en', 'zh'],
     defaultLocale: 'en',

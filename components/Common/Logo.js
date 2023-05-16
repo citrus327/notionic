@@ -19,7 +19,7 @@ const Logo = (props) => (
   //   </g>
   // </svg>
   <Image
-    src='/blog/profile.png'
+    src='/profile.png'
     width={36}
     height={36}
     alt='Picture of the author'
