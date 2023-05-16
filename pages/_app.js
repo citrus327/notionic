@@ -23,7 +23,7 @@ import NProgress from 'nprogress'
 import '@/styles/nprogress.css'
 import Header from '@/components/NavBar/Header'
 import Footer from '@/components/NavBar/Footer'
-
+import { Analytics } from '@vercel/analytics/react'
 const Ackee = dynamic(() => import('@/components/Common/Ackee'), { ssr: false })
 const Gtag = dynamic(() => import('@/components/Common/Gtag'), { ssr: false })
 
@@ -54,6 +54,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Scripts />
+      <Analytics />
       {BLOG.isProd && BLOG?.analytics?.provider === 'ackee' && (
         <Ackee
           ackeeServerUrl={BLOG.analytics.ackeeConfig.dataAckeeServer}
@@ -67,13 +68,13 @@ function MyApp({ Component, pageProps }) {
           fullWidth={pageProps.post ? pageProps.post.fullWidth : false}
         />
         <TransitionEffect>
-            <div
-              className={`min-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-18rem)] ${
-                BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
-              }`}
-            >
-              <Component {...pageProps} />
-            </div>
+          <div
+            className={`min-h-[calc(100vh-14rem)] md:min-h-[calc(100vh-18rem)] ${
+              BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
+            }`}
+          >
+            <Component {...pageProps} />
+          </div>
         </TransitionEffect>
         <Footer fullWidth={pageProps.post ? pageProps.post.fullWidth : false} />
       </ThemeProvider>
