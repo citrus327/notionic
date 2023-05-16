@@ -2,7 +2,7 @@ const BLOG = {
   title: 'Citrus327',
   author: 'HopHop',
   email: 'citrus327@outlook.com',
-  link: 'https://zuolan.me',
+  link: 'https://hophop.work',
   newsletter: 'Notionic Weekly',
   description: 'A static blog build on top of Notion and Next.js',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
@@ -27,7 +27,7 @@ const BLOG = {
   previewImagesEnabled: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
-  defaultCover: '/cover.jpg',
+  defaultCover: '/blog/cover.jpg',
   socialLink: {
     twitter: 'https://twitter.com/izuolan',
     github: 'https://github.com/izuolan',

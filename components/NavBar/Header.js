@@ -86,7 +86,6 @@ const NavBar = () => {
                   </div>
                 </li>
               </Link>
-
             )
         )}
       </ul>
@@ -99,7 +98,8 @@ const NavBar = () => {
       {/* Mobile Phone Menu */}
       <div className='md:hidden mr-2 block '>
         <button
-          type='button' aria-label='Menu'
+          type='button'
+          aria-label='Menu'
           onClick={() => setShowMenu((showMenu) => !showMenu)}
           className='hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-lg block p-2 -mr-3 md:pb-3'
         >
@@ -138,13 +138,19 @@ const Header = ({ navBarTitle, fullWidth }) => {
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(/** @type {HTMLDivElement} */ undefined)
   const sentinelRef = useRef(/** @type {HTMLDivElement} */ undefined)
-  const handler = useCallback(([entry]) => {
-    if (useSticky && navRef.current) {
-      navRef.current?.classList.toggle('sticky-nav-full', !entry.isIntersecting)
-    } else {
-      navRef.current?.classList.add('remove-sticky')
-    }
-  }, [useSticky])
+  const handler = useCallback(
+    ([entry]) => {
+      if (useSticky && navRef.current) {
+        navRef.current?.classList.toggle(
+          'sticky-nav-full',
+          !entry.isIntersecting
+        )
+      } else {
+        navRef.current?.classList.add('remove-sticky')
+      }
+    },
+    [useSticky]
+  )
 
   useEffect(() => {
     const sentinelEl = sentinelRef.current
