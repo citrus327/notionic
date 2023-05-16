@@ -14,6 +14,7 @@ import {
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
 import LangSwitcher from './LangSwitcher.js'
+import RssSub from './RssSub.js'
 import Logo from '@/components/Common/Logo'
 import { motion } from 'framer-motion'
 
@@ -93,6 +94,7 @@ const NavBar = () => {
       <div className='nav-func-btn block'>
         <ThemeSwitcher />
         <LangSwitcher />
+        <RssSub />
       </div>
 
       {/* Mobile Phone Menu */}

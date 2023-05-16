@@ -49,14 +49,14 @@ const Footer = ({ fullWidth }) => {
       icon: <BookOpenIcon className='inline-block mb-1 h-5 w-5' />,
       show: BLOG.pagesShow.books
     },
-    {
+    BLOG.pagesShow.contact && {
       id: 3,
       name: t.NAV.CONTACT,
       to: '/contact',
       icon: <MailIcon className='inline-block mb-1 h-5 w-5' />,
       show: BLOG.pagesShow.contact
     }
-  ]
+  ].filter(Boolean)
 
   return (
     <motion.div
@@ -71,7 +71,8 @@ const Footer = ({ fullWidth }) => {
               (link) =>
                 link.show && (
                   <Link passHref key={link.id} href={link.to} scroll={false}>
-                    <li key={link.id}
+                    <li
+                      key={link.id}
                       className={`${
                         activeMenu === link.to
                           ? 'bg-gray-200 dark:bg-gray-700'
