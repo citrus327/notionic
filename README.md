@@ -57,4 +57,4 @@ pnpm start
 - [Nobelium](https://github.com/craigary/nobelium)
 - [NotionNext](https://github.com/tangly1024/NotionNext)
 
-The MIT License.
+The MIT License..
