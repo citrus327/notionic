@@ -84,10 +84,6 @@ module.exports = async (req, res) => {
   const modifyResText = originResText
     .replace('<meta name="robots" content="noindex">', '')
     .replace(
-      '<link rel="icon" href="/share/static/favicon.ico">',
-      '<link rel="icon" href="/favicon.svg">'
-    )
-    .replace(
       '<link rel="apple-touch-icon" href="/share/static/logo-192.png">',
       '<link rel="apple-touch-icon" href="/favicon.png">'
     )
