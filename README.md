@@ -1,4 +1,13 @@
-# Notionic
+# blog.hophop.work
+
+Powered by Notionic(zuolan.me) with some minor changes.
+
+Check out the original Readme.Md down below.
+
+
+
+
+## Notionic
 
 Notionic is a static blog that updates in real time, synchronizing changes to Notion pages without rebuilding the deployment.
 
