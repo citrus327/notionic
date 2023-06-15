@@ -1,10 +1,11 @@
 const BLOG = {
   title: 'Citrus327',
-  author: 'HopHop',
+  author: 'Hophop',
   email: 'citrus327@outlook.com',
   link: 'https://hophop.work',
-  newsletter: 'Notionic Weekly',
-  description: '',
+  newsletter: 'Hophop Weekly',
+  description:
+    'This is my personal blog for front-end related content, and also my life',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -33,7 +34,7 @@ const BLOG = {
     github: 'https://github.com/citrus327'
   },
   seo: {
-    keywords: ['Notionic', 'Citrus327', 'HopHop', 'Blog'],
+    keywords: ['Citrus327', 'Hophop', 'Blog', '博客'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS! Edit .env file!
