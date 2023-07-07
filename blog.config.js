@@ -4,8 +4,7 @@ const BLOG = {
   email: 'citrus327@outlook.com',
   link: 'https://hophop.work',
   newsletter: 'Hophop Weekly',
-  description:
-    'This is my personal blog for front-end related content, and also my life',
+  description: 'Thoughts and Casual Writing',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
